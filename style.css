@@ -1,0 +1,288 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(15,23,42,.85);
+    backdrop-filter:blur(15px);
+    z-index:999;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.menu{
+    display:none;
+    font-size:26px;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    color:#38bdf8;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    font-size:28px;
+    color:#94a3b8;
+}
+
+.hero-text p{
+    margin:25px 0;
+    max-width:600px;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 40px rgba(56,189,248,.4);
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn,
+.btn2{
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn{
+    background:#38bdf8;
+    color:#000;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn2{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.btn2:hover{
+    background:#38bdf8;
+    color:#000;
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+/* Cards */
+
+.card,
+.about-box,
+.project{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.card:hover,
+.about-box:hover,
+.project:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(56,189,248,.2);
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skills div{
+    padding:20px;
+    background:#1e293b;
+    text-align:center;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skills div:hover{
+    background:#38bdf8;
+    color:#000;
+}
+
+/* Projects */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* Contact */
+
+.contact p{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact i{
+    color:#38bdf8;
+    margin-right:10px;
+}
+
+.contact a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    color:#38bdf8;
+}
+
+/* Footer */
+
+footer{
+    background:#020617;
+    padding:20px;
+    text-align:center;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-image img{
+    width:260px;
+    height:260px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+nav{
+    display:none;
+}
+
+.menu{
+    display:block;
+}
+
+.buttons{
+    justify-content:center;
+}
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.social-links a{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#1e293b;
+    color:#38bdf8;
+    font-size:22px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#38bdf8;
+    color:#000;
+    transform:translateY(-6px);
+}
+}
